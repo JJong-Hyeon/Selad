@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="faq">
+	<select id="faqlist" resultType="java.util.Map">
+		SELECT  fno, userid, fsub, fcon, fdate, fpw, fcnt
+        FROM faq
+        ORDER BY fno
+	</select>
+	
+	<select id="faqdetail" resultType="java.util.Map" parameterType="int">
+		SELECT  fno, userid, fsub, fcon, fdate, fpw, fcnt
+        FROM faq
+        WHERE fno = #{fno}
+	</select>
+	
+	<delete id="faqdelete" parameterType="int">
+		DELETE FROM faq
+        WHERE fno = #{fno}
+	</delete>
+
+<!--	
+ 	<update id="qnaupdate" parameterType="java.util.Map">
+		UPDATE qna
+		SET qsub=#{qsub}
+		   ,qcon=#{qcon}
+		   ,qdate=current_date
+		WHERE qno=#{qno}
+	</update>
+ -->	
+	<insert id="faqinsert" parameterType="java.util.Map">
+		INSERT INTO faq(fsub, userid, fcon, fdate, fpw)
+		VALUES(#{fsub}, #{userid}, #{fcon}, current_date, #{fpw})
+	</insert>
+	
+	<select id="faqsearch" parameterType="String" resultType="java.util.Map">
+		SELECT  fno, userid, fsub, fcon, fdate, fpw, fcnt
+        FROM fna
+        WHERE fsub LIKE #{keyword}
+        ORDER BY fno
+	</select>
+	
+	<update id="fcntupdate" parameterType="int">
+		UPDATE faq
+		SET fcnt=fcnt+1
+		WHERE fno=#{fno}
+	</update>
+	
+		<!-- 페이징을 적용한 게시물 리스트 조회 -->
+	<select id="faqlistPaging" resultType="map">
+	    SELECT *
+	    FROM FAQ
+	    ORDER BY fNO DESC
+	    LIMIT #{start}, #{end}
+	</select>
+	
+	<select id="faqcount" resultType="int">
+	    SELECT COUNT(*) FROM faq;
+	</select>
+</mapper>

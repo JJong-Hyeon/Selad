@@ -1,0 +1,264 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner img {
+  width: 100%;
+}
+.banner p {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 500;
+  top: 30%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  top: 50%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000;
+}
+/* //banner end */
+
+/* section1 */
+/* section1 */
+.section1 {
+  width: 100%;
+  margin-top: 70px;
+}
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section_frame .next_btn {
+  padding: 10px 30px;
+  background-color: #ff5c00;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 150px;
+}
+.section_frame > h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  margin-top: 10%;
+  font-weight: bold;
+  color: #29b648;
+}
+.section_frame > p {
+  margin-bottom: 70px;
+  font-size: 22px;
+}
+.order_box {
+  width: 1000px;
+  margin: 70px auto 0px;
+  border: 2px solid #29b648;
+  border-radius: 10px;
+}
+.order_box .green_bar {
+  width: 100%;
+  height: 30px;
+  background: #29b648;
+  border-radius: 5px 5px 0px 0px;
+}
+.text-left {
+  width: 400px;
+  margin: 0 auto;
+  text-align: right;
+}
+.section_frame .text-left > img {
+  width: 400px;
+  margin-bottom: 25px;
+}
+.section_frame .text-left > h3:first-of-type {
+  margin-right: 14px;
+}
+.section_frame .text-left > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-right: 7px;
+}
+.section_frame > h3:first-of-type {
+  margin-bottom: 15px;
+}
+.order_box {
+  width: 900px;
+  margin: 70px auto 150px;
+  border: 2px solid #29b648;
+  border-radius: 10px;
+}
+.order_box .green_bar {
+  width: 100%;
+  height: 30px;
+  background: #29b648;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.order_box .form_box h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+.order_box .form_box form {
+  width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.order_box .form_box form h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.order_box .form_box form > button {
+  display: block;
+  padding: 10px 60px;
+  background-color: #ff5c00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 22px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.order_box .form_box form .single_line:first-of-type > input {
+  width: 93.5%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 20px;
+}
+.order_box .form_box form .single_line:first-of-type > input:focus {
+  outline: 2px solid #29b648;
+}
+.order_box .form_box form .single_line:nth-of-type(3) > input {
+  width: 93.5%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 20px;
+}
+.order_box .form_box form .single_line:nth-of-type(3) > input:focus {
+  outline: 2px solid #29b648;
+}
+.order_box .form_box form .single_line {
+  margin-bottom: 30px;
+}
+.order_box .form_box form .single_line select {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 10px;
+}
+.order_box .form_box form .single_line .inputflexbox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.order_box .form_box form .single_line .inputflexbox select {
+  width: 77%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 10px;
+}
+.order_box .form_box form .single_line .inputflexbox input {
+  width: 70%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 20px;
+}
+.order_box .form_box form .single_line .inputflexbox button {
+  cursor: pointer;
+  background-color: #29b648;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.order_box .form_box form .single_line .inputflexbox input:focus {
+  outline: 2px solid #29b648;
+}
+.order_box .form_box form .single_line .inputflexbox .order_notice {
+  margin-left: 20px;
+}
+.order_box .form_box form .single_line .inputflexbox .order_notice > p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+.order_box .form_box form .single_line .inputflexbox .order_notice > h4 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.order_box .form_box form .single_line .inputflexbox .order_notice > h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff5c00;
+}
+.order_box .form_box form .single_line:last-of-type input {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+.order_box .form_box form .single_line:last-of-type input:focus {
+  outline: none;
+}
+.single_line .flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.single_line .flexbox input {
+  width: 23%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  outline: 1px solid #bbbbbb;
+  padding: 0 20px;
+}
+.single_line .flexbox input:focus {
+  outline: 2px solid #29b648;
+}
+.single_line .order_list {
+  border-top: 3px solid #29b648;
+  padding: 20px 0px;
+  border-bottom: 1px solid #29b648;
+}
+.order_box .form_box form .single_line:last-of-type .order_list {
+  border-top: none;
+}
+/* //section1 end */

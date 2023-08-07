@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qna">
+	<select id="qnalist" resultType="java.util.Map">
+		SELECT  qno, userid, qsub, qcon, qdate, qpw, qcnt
+        FROM qna
+        ORDER BY qno
+	</select>
+	
+	<select id="qnadetail" resultType="java.util.Map" parameterType="int">
+		SELECT  qno, userid, qsub, qcon, qdate, qpw, qcnt
+        FROM qna
+        WHERE qno = #{qno}
+	</select>
+	
+	<delete id="qnadelete" parameterType="int">
+		DELETE FROM qna
+        WHERE qno = #{qno}
+	</delete>
+
+<!--	
+ 	<update id="qnaupdate" parameterType="java.util.Map">
+		UPDATE qna
+		SET qsub=#{qsub}
+		   ,qcon=#{qcon}
+		   ,qdate=current_date
+		WHERE qno=#{qno}
+	</update>
+ -->	
+	<insert id="qnainsert" parameterType="java.util.Map">
+		INSERT INTO qna(qsub, userid, qcon, qdate, qpw)
+		VALUES(#{qsub}, #{userid}, #{qcon}, current_date, #{qpw})
+	</insert>
+	
+	<select id="qnasearch" parameterType="String" resultType="java.util.Map">
+		SELECT  qno, userid, qsub, qcon, qdate, qpw, qcnt
+        FROM qna
+        WHERE qsub LIKE #{keyword}
+        ORDER BY qno
+	</select>
+	
+	<update id="qcntupdate" parameterType="int">
+		UPDATE qna
+		SET qcnt=qcnt+1
+		WHERE qno=#{qno}
+	</update>
+	
+		<!-- 페이징을 적용한 게시물 리스트 조회 -->
+	<select id="qnalistPaging" resultType="map">
+	    SELECT *
+	    FROM QNA
+	    ORDER BY QNO DESC
+	    LIMIT #{start}, #{end}
+	</select>
+	
+	<select id="qnacount" resultType="int">
+	    SELECT COUNT(*) FROM qna;
+	</select>
+	
+	<select id="myqna" parameterType="String" resultType="java.util.Map">
+		SELECT qsub, qdate
+		FROM qna
+		WHERE userid =#{s_id}
+	</select>
+</mapper>

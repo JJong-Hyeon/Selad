@@ -1,0 +1,106 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+/* section1 */
+.section1 {
+  margin-bottom: 100px;
+}
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.section_frame h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+.section_frame table {
+  width: 1200px;
+  border-top: 4px solid #29b648;
+  border-bottom: 2px solid #29b648;
+}
+.section_frame table thead tr td {
+  vertical-align: middle;
+}
+.section_frame table tbody tr td {
+  vertical-align: middle;
+}
+.section_frame table thead tr td:first-of-type {
+  width: 20%;
+}
+.section_frame table thead tr {
+  height: 100px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section_frame table thead tr input {
+  width: 80%;
+  height: 35px;
+  border-radius: 5px;
+  outline: 1px solid #d9d9d9;
+  border: none;
+  padding: 0px 20px;
+}
+.section_frame table thead tr input:focus {
+  border-radius: 5px;
+  outline: 2px solid #29b648;
+}
+
+.section_frame table thead tr textarea {
+  border-radius: 5px;
+  outline: 1px solid #d9d9d9;
+  width: 83.6%;
+  border: none;
+}
+
+.section_frame table thead tr textarea:focus {
+  outline: 2px solid #29b648;
+}
+
+.section_frame .button_align {
+  display: flex;
+  justify-content: space-between;
+}
+.section_frame .button_align > button {
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.section_frame .button_align .butten_right_box button:first-of-type {
+  padding: 10px 30px;
+  background-color: #29b648;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.section_frame .button_align .butten_right_box input {
+  padding: 10px 30px;
+  background-color: #ff5c00;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+/* //section1 */

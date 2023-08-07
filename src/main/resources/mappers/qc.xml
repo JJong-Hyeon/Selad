@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="qc">
+
+	<select id="qclist" resultType="java.util.Map">
+		SELECT  qcno, qno, userid, qcdate, qccon
+        FROM q_comm
+        ORDER BY qcno
+	</select>
+	
+	<insert id="qcinsert" parameterType="java.util.Map">
+		INSERT INTO q_comm(qno, userid, qcdate, qccon)
+		VALUES(#{qno}, #{userid}, current_date, #{qcon})
+	</insert>
+	
+	<delete id="qcdelete" parameterType="java.util.Map">
+	    DELETE FROM q_comm
+	    WHERE qcno = #{qcno}
+	</delete>
+</mapper>

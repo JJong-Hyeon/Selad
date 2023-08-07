@@ -1,0 +1,237 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.banner p {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 500;
+  top: 25%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000000;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  top: 55%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000000;
+}
+/* //banner end */
+
+/* section1  */
+.section1 img {
+  display: block;
+  margin: auto;
+}
+
+.section_frame {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.section_frame > h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: left;
+  color: #ff5c00;
+  letter-spacing: 1px;
+}
+.section_frame .cart_box {
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+}
+.section_frame .order_list_btn {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bbbbbb;
+  padding-top: 40px;
+}
+.section_frame .order_list_btn > p {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.section_frame .order_list_btn > p span {
+  color: #ff5c00;
+  margin-left: 15px;
+}
+.section_frame .order_list_btn .btn a {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #29b648;
+  font-size: 18px;
+  font-weight: 600;
+}
+.section_frame .order_list_btn .btn a:last-of-type {
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #ff5c00;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+/* //section1 end */
+
+/* tab_menu */
+.tab_menu > ul {
+  display: flex;
+}
+.tab_menu > ul li {
+  width: 50%;
+  padding: 30px 0px;
+  border-radius: 8px 0px 0px 0px;
+}
+.tab_menu > ul li:last-of-type {
+  width: 50%;
+  padding: 30px 0px;
+  border-radius: 0px 8px 0px 0px;
+}
+.tab_menu > ul li a {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.tab_menu > ul li.active {
+  background-color: #29b648;
+  color: #ffffff;
+}
+
+.tab_menu > ul li.active a {
+  color: #fff;
+}
+.tab_cont {
+  border-top: 1px solid #bbbbbb;
+  padding: 70px 60px;
+}
+.tab_cont .delivery .order_list_box h2 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 70px;
+  margin-left: 55px;
+}
+.tab_cont .delivery .singleline_box {
+  display: flex;
+  justify-content: space-between;
+}
+.tab_cont .delivery .singleline_box > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.tab_cont .pickup .order_list_box h2 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 24px;
+  margin-top: 70px;
+  margin-left: 55px;
+}
+.tab_cont .pickup .singleline_box {
+  display: flex;
+  justify-content: space-between;
+}
+.tab_cont .pickup .singleline_box > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.singleline_box button {
+  padding: 8px 40px;
+  border: 1px solid #ff5c00;
+  background-color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #ff5c00;
+  font-weight: 600;
+  cursor: pointer;
+}
+.singleline_box .radio_box {
+  display: flex;
+  align-items: center;
+}
+.singleline_box .radio_box p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 20px;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.singleline_box .radio_box input {
+  width: 30px;
+  height: 30px;
+}
+.order_list_box .order_cont {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.order_list_box .order_cont > input {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 45px;
+}
+.order_list_box .order_cont .order_cont_box .singleline_item_box {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bbbbbb;
+}
+.order_list_box .order_cont .order_item_info {
+  text-align: left;
+  width: 675px;
+  padding-left: 20px;
+}
+.order_list_box .order_cont .order_item_info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.order_list_box .order_cont .order_item_info p {
+  font-size: 18px;
+  color: #7d7d7d;
+  margin-bottom: 20px;
+}
+.order_list_box .order_cont .order_item_info .price_kcal {
+  display: flex;
+  justify-content: space-between;
+}
+.order_list_box .order_cont .order_item_info .price_kcal h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ff5c00;
+}
+.order_list_box .order_cont .order_item_info .price_kcal h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #29b648;
+  margin-right: 100px;
+}
+/* //tab_menu end */

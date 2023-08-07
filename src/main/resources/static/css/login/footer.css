@@ -1,0 +1,33 @@
+footer {
+    display: flex;
+    background: #32302E;
+    height: 100px;
+}
+.foot1 {
+    padding: 20px 0 0 40px;
+    width: 90%;
+}
+.foot1 span {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    margin-right: 20px;
+}
+.foot1 h2 {
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+}
+.foot1 div {
+    margin-bottom: 7px;
+}
+.foot2 {
+    width: 10%;
+    text-align: center;
+    line-height: 100px;
+    padding: 0 20px 0 0;
+}
+.foot2 h2 {
+    font-size: 35px;
+    color: #fff;
+}

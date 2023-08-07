@@ -1,0 +1,227 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.bg_body {
+  background-color: #eeeeee;
+  width: 100%;
+}
+.frame {
+  margin: 0 auto;
+  width: 1000px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.greenbar {
+  width: 100%;
+  height: 30px;
+  background: #29b648;
+  border-radius: 10px 10px 0 0;
+}
+.member {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-bottom: 100px;
+}
+
+.mypage_frame {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* 회원정보  */
+.mypage_frame > p {
+  font-size: 32px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.mypage_frame p > span {
+  font-size: 32px;
+  color: #ff5c00;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.greenbox > h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.customer_box {
+  border-top: 6px solid #29b648;
+  border-bottom: 2px solid #29b648;
+  padding: 40px 0;
+  margin-bottom: 60px;
+}
+.customer_box_type2 {
+  border-top: 6px solid #29b648;
+  border-bottom: 2px solid #29b648;
+  margin-bottom: 60px;
+}
+.customer_box_type2:last-of-type {
+	margin-bottom:40px;
+}
+.customer_box .singleline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.customer_box .singleline2 {
+	display: flex;
+    justify-content: end;
+}
+.customer_box .singleline2 > h3 {
+	text-align:right;
+	font-size: 18px;
+    color: #727272;
+    margin-bottom:20px;
+}
+.customer_box .singleline2 > h3:last-of-type {
+	margin-left:10px;
+}
+.customer_box .singleline:last-of-type {
+  justify-content: end;
+}
+.customer_box .singleline h2 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 15%;
+}
+.customer_box .singleline h3 {
+  font-size: 18px;
+  color: #727272;
+  text-align: right;
+}
+.customer_box .singleline a {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+/* //회원정보 end */
+
+/* 주문 내역 */
+.order_box {
+ display:flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #bbbbbb;
+  padding-bottom: 20px;
+}
+.order_box img {
+  width: 130px;
+  height: 130px;
+  display: block;
+}
+.odr_text_box {
+  width: 80%;
+  margin-top: 15px;
+}
+.odr_text_box .ord_singleline {
+ 
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.odr_text_box .ord_singleline h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom:20px;
+}
+.odr_text_box .ord_singleline .veg1 h5 {
+  font-size: 18px;
+}
+.odr_text_box .ord_singleline .veg1 h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color:#bbbbbb;
+  margin-bottom:20px;
+}
+.odr_text_box .ord_singleline .flex_box {
+	display:flex;
+justify-content: space-between;
+align-items: center;
+}
+.odr_text_box .ord_singleline .flex_box h7 {
+	  font-size: 20px;
+  font-weight: bold;
+  color:#ff5700;
+
+}
+.odr_text_box .ord_singleline > p {
+  font-size: 18px;
+  font-weight: normal;
+}
+.odr_text_box .ord_singleline a {
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #29b648;
+  border: none;
+  border-radius: 5px;
+}
+/* //주문 내역 end */
+
+/* 쿠폰 내역 */
+.customer_box_type2 table {
+  width: 800px;
+  text-align: center;
+}
+
+.customer_box_type2 table tr td {
+  padding: 15px;
+}
+.customer_box_type2 thead {
+  border-bottom: 1px solid #29b648;
+} /* //쿠폰 내역 end*/
+.customer_box_type2 thead tr td {
+  font-size: 18px;
+  font-weight: bold;
+}
+.customer_box_type2 tbody tr td:last-of-type {
+  text-align: center;
+}
+.customer_box_type2 tbody tr a {
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #29b648;
+}
+/* //쿠폰내역 end */
+
+.mypage_frame > a {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: right;
+}
+
+.mypage_frame > .goqna {
+	font-size:15px;
+	margin-left: 720px;
+    margin-bottom: 20px;
+
+}
+
+.btn_box {
+	text-align:right;
+}
+.btn_box a:first-of-type {
+	padding: 10px 30px;
+    color: #fff;
+    background-color: #29b648;
+    border: none;
+    border-radius: 5px;
+    display:inline-block;
+    
+}
+.btn_box a:last-of-type {
+	display:block;
+	margin-top:60px;
+	font-size:22px;
+	font-weight:600;
+}

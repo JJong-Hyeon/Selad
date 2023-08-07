@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UserList 매퍼 파일 -->
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jumun">
+
+
+   <select id="list1" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='B'
+  </select>
+  
+  
+   <select id="list2" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='X'
+  </select>
+  
+  <select id="list3" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='V'
+  </select>
+  
+  <select id="list4" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='F'
+  </select>
+  
+  <select id="list5" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='G'
+  </select>
+  
+  <select id="list6" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='E'
+  </select>
+  
+   <select id="list7" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='S'
+  </select>
+  
+   <select id="list8" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='C'
+  </select>
+  
+   <select id="list9" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='D'
+  </select>
+   
+    <select id="cart" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, price, kcal
+		from pd
+		where pcode = #{pcode}
+
+  </select>
+  
+  <select id="list11" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='R'
+  </select>
+  
+  
+   <select id="list12" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='P'
+  </select>
+  
+  <select id="list13" resultType="kr.co.selad.pd.PdDTO">    	    
+	    select pic, pname, pcode, price, wei, kcal
+		from pd
+		where cate='D'
+  </select>
+  
+  
+    <select id="price1" resultType="int" parameterType="String">    	    
+	    select price
+		from pd
+		where pcode = #{pcode}
+  </select>
+  
+  
+  
+  <select id="price2" resultType="int" parameterType="java.util.List">
+    SELECT price
+    FROM pd
+    WHERE pcode IN
+    <foreach item="pcode" collection="pd_list3" open="(" separator="," close=")">
+        #{pcode}
+    </foreach>
+</select>
+
+
+   
+</mapper>

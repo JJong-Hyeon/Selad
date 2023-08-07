@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- order.xml -->
+
+<mapper namespace="pay">
+	<!--  
+	<select id="ono" resultType="String" parameterType="String">
+		select nvl(max(ono), '1')
+		from jumun
+		where ono like #{date} || '%'
+    </select>
+
+
+	<select id="totalamount" resultType="int" parameterType="String">
+		select sum(price*qty) 
+	    from cart
+	    where userid=#{userid}	
+	</select>
+	
+	
+	<insert id="jumunlistInsert" parameterType="kr.co.selad.order.OrderDTO">
+		insert into jumunlist (ono, userid, tot, pcode, oaddr, ps)
+		values (#{ono}, #{userid}, #{tot}, #{pcode},  #{oaddr}, 'I')	
+	</insert>
+
+
+	<insert id="jumundetailInsert" parameterType="java.util.HashMap">
+		insert into jumundetail(odno, ono, bno, pcode, qty, price)
+		  select orderdetail_seq.nextval, #{ono}, pcode, qty, price 
+		  from cart
+		  where userid=#{s_id}
+	</insert>
+
+
+	<delete id="cartDelete" parameterType="String">
+        DELETE FROM cart
+        WHERE id=#{s_id}
+    </delete>
+	-->
+</mapper>     
+
+
+
+

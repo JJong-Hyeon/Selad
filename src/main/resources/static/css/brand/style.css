@@ -1,0 +1,228 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner img {
+  width: 100%;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 2px;
+}
+/* //banner end */
+
+/* section1 */
+.section1 {
+  margin-bottom: 100px;
+}
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section_frame > h2 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.section_frame p {
+  font-size: 24px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+.section_frame p > span.select {
+  color: #ff5c00;
+  font-weight: 500;
+}
+.section_frame p > span.salad {
+  color: #29b648;
+  font-weight: 500;
+}
+.img_frame {
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.img_frame .img_m > h2 {
+  line-height: 220px;
+  font-size: 42px;
+  font-weight: 600;
+}
+.img_frame .img_l {
+  position: relative;
+}
+.img_frame .img_l img {
+  width: 100%;
+  display: inline-block;
+}
+.img_frame .img_l > span {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 14px 67px;
+  border-radius: 0px 15px 0px 15px;
+  background-color: #ff5c00;
+  position: absolute;
+  bottom: 1%;
+  color: #fff;
+}
+.img_frame .img_r {
+  position: relative;
+}
+.img_frame .img_r img {
+  width: 100%;
+  display: inline-block;
+}
+.img_frame .img_r > span {
+  font-size: 32px;
+  font-weight: 600;
+  padding: 14px 67px;
+  border-radius: 0px 15px 0px 15px;
+  background-color: #29b648;
+  position: absolute;
+  bottom: 1%;
+  color: #fff;
+}
+/* //section1 end */
+
+/* section2 */
+.section2 {
+  margin-bottom: 100px;
+}
+.section_frame2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section_frame2 > p {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+.section_frame2 > p > span {
+  color: #29b648;
+}
+.img_box img {
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+.section2 .section2_text p {
+  font-size: 20px;
+  line-height: 40px;
+}
+/* //section2 end */
+
+/* section3 */
+.section3 {
+  background: url(../../images/farmbanner.png);
+  width: 100%;
+  height: 300px;
+}
+.farmimg_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+.farmimg_box > h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 92px;
+}
+.farmimg_box .ask_box {
+  display: flex;
+  justify-content: space-between;
+}
+.farmimg_box .ask_box > h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #fff;
+  padding-top: 42px;
+}
+.farmimg_box .ask_box > a {
+  padding: 15px 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-top: 32px;
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.farmimg_box .ask_box > a:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* //section3 end */
+
+/* section4 */
+.section4 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section4 .section_frame > h2 {
+  margin-bottom: 60px;
+}
+.section4 .section_frame > p {
+  font-size: 24px;
+}
+.section_frame .probox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.section_frame .probox h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 600;
+}
+.section_frame .probox_l {
+  width: 375px;
+  height: 231px;
+  background: url(../../images/pro_l_img.png);
+  text-align: center;
+}
+.section_frame .probox_l img {
+  display: inline-block;
+  margin-top: 45px;
+  margin-bottom: 31px;
+}
+.section_frame .probox_m {
+  width: 375px;
+  height: 231px;
+  background: url(../../images/pro_m_img.png);
+  text-align: center;
+}
+.section_frame .probox_m img {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+.section_frame .probox_r {
+  width: 375px;
+  height: 231px;
+  background: url(../../images/pro_r_img.png);
+  text-align: center;
+}
+.section_frame .probox_r img {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+/* //section4 end */

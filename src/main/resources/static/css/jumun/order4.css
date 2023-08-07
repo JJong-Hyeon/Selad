@@ -1,0 +1,424 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+    display: block;
+    
+    }
+    body {
+    line-height: 1;
+    }
+    ol,
+    ul {
+    list-style: none;
+    }
+    blockquote,
+    q {
+    quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+    content: "";
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        font-family: 'Inter', sans-serif;
+        z-index: 2;
+
+    }
+    .slide img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    
+    .slide span1{
+        position: absolute;
+        top: 30%;
+        left: 18%;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .slide span2{
+        position: absolute;
+        top: 45%;
+        left: 18%;
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .slide {
+        position: relative;
+    }
+    /* header:hover {
+        background: #fff;
+    } */
+
+    a {
+        text-decoration: none;
+        color: #111111;
+    }
+    .logo {
+        width: 20%;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 3%;
+        /* background: #777; */
+    }
+    .logo h2 {
+        font-size: 38px;
+        font-weight: bold;
+    }
+    .nav {
+        width: 70%;
+        /* background: #666; */
+        margin: 0 8%;
+        line-height:3;
+
+
+    }
+    .nav li {
+        padding: 0 10px 0 10px;
+        width: 25%;
+    }
+    .nav a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111111;
+    }
+    .login {
+        width: 15%;
+        /* background: #555; */
+        text-align: right;
+        padding-right: 9%;
+        line-height:3;
+    }
+    .login img {
+        margin-right: 10px;
+    }
+    .login a {
+        font-size: 18px;
+        font-weight: 600;
+        color: #111111;
+    }
+
+    .menu_list {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        list-style: none;
+    }
+
+    .menu_list li a:hover {
+        color: #29B648
+    }
+
+    .submenu {
+        display: none;
+    }
+    .submenu li{
+        padding: 0;
+        width: 100%;
+    }
+    /* section1 */
+    .section1 {
+        width: 100%;
+    }
+    .section_txt1 {
+        margin-top: 80px;
+    }
+    .section_txt2 {
+        margin-top: 30px;
+    }
+    .section_txt3 {
+        margin-top: 40px;
+    }
+    .section_txt4 {
+        margin-top: 0;
+    }
+
+    .section_txt1 p{
+        color: #29B648;
+        text-align: center;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .section_txt2 p {
+        text-align: center;
+        font-size: 15px;
+    }
+    .section_txt3 p{
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 10px;
+       
+    }
+    .section_txt3 img {
+        height: 40%;
+        width: 40%;
+        padding-top: 20px;
+    }
+
+  
+
+    .section_frame{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .frame {
+        width: 850px;
+        height:1550px;
+        margin: 0 auto;
+        border-radius: 0px 0px 10px 10px;
+      
+        border-left: 2px solid #29B648;  
+        border-bottom: 20px solid #29B648; 
+        border-right: 2px solid #29B648;
+        margin-bottom: 50px;
+    }
+    
+    .frame a:hover{
+                color: #29B648;
+    }
+
+   
+   
+
+
+    footer {
+    display: flex;
+    background: #32302E;
+    height: 100px;
+  
+    }
+    .foot1 {
+        padding: 20px 0 0 40px;
+        width: 90%;
+    }
+    .foot1 span {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 400;
+        margin-right: 20px;
+    }
+    .foot1 h2 {
+        color: #fff;
+        font-size: 13px;
+        font-weight: normal;
+    }
+    .foot1 div {
+        margin-bottom: 7px;
+    }
+    .foot2 {
+        width: 10%;
+        text-align: center;
+        line-height: 100px;
+        padding: 0 20px 0 0;
+    }
+    .foot2 h2 {
+        font-size: 35px;
+        color: #fff;
+    }
+    body {
+    font-family: 'Inter', sans-serif;
+    }
+
+    .section3 {
+    border: 1px solid #29B648;
+    width: 100%;
+    height: 1px;
+    
+    margin-bottom: 50px;
+    border-bottom: none;
+}
+    
+    .section3 div{
+        margin-left: 50px;
+    }
+
+.veg1 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+    
+}
+.veg1 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+.veg2 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+}
+.veg2 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+.veg3 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+}
+.veg3 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+.veg4 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+}
+.veg4 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+.fut1 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+}
+.fut1 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+.fut2 div{
+    width: 150px;
+    border: 1px solid #29B648;
+    border-radius: 10px;
+    position: absolute;
+}
+.fut2 div:hover{
+    background-color: #29B648;
+    color: white;
+    
+}
+
+

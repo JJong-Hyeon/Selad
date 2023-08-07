@@ -1,0 +1,189 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.bg_body {
+  background-color: #eeeeee;
+  width: 100%;
+}
+.frame {
+  margin: 0 auto;
+  width: 800px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.greenbar {
+  width: 100%;
+  height: 30px;
+  background: #29b648;
+  border-radius: 10px 10px 0 0;
+}
+.member {
+  background-color: #fff;
+  border-radius: 10px;
+}
+.form_frame {
+  width: 500px;
+  margin: 0 auto;
+}
+.form_frame .form  button {
+  width: 100%;
+  height: 55px;
+  border: none;
+  color: #fff;
+  background-color: #29b648;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+.form_frame .form  button:first-of-type {
+	margin-bottom:25px;
+}
+.member .form_frame > h2 {
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  letter-spacing: 2px;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.flexbox p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.flexbox p:last-of-type {
+  font-size: 16px;
+}
+.flexbox p > span {
+  color: #fc0404;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.inputflexbox > input {
+  font-size: 16px;
+  width: 485px;
+  height: 55px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+  margin-right: 20px;
+}
+.inputflexbox > input:focus {
+  outline: 2px solid #29b648;
+  border-color: #29b648;
+}
+.inputflexbox > button {
+  width: 130px;
+  height: 55px;
+  border: none;
+  color: #fff;
+  background-color: #29b648;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.form_box {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.form_box p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: flex;
+}
+.form_box p > span {
+  color: #fc0404;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.form_box > input {
+  width: 485px;
+  height: 55px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+}
+.form_box input:focus {
+  outline: 2px solid #29b648;
+  border-color: #29b648;
+}
+
+.numberbox > input {
+  width: 140px;
+  height: 55px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+  margin-right: 20px;
+}
+.numberbox > input:focus {
+  outline: 2px solid #29b648;
+  border-color: #29b648;
+}
+
+.idnumber > input {
+  width: 235px;
+  height: 55px;
+  font-size: 16px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+  margin-right: 30px;
+}
+.idnumber > input:last-of-type {
+  width: 230px;
+  margin-right: 0px;
+}
+.idnumber > input:focus {
+  outline: 2px solid #29b648;
+  border-color: #29b648;
+}
+.radiocheck {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.radiocheck span {
+  font-size: 18px;
+  margin-left: 5px;
+}
+.radiocheck > input {
+  width: 20px;
+  height: 20px;
+  accent-color: #29a245;
+}
+.radiocheck > input:focus {
+  outline: none;
+  border-color: none;
+}
+
+.radiocheck > input:last-of-type {
+  margin-left: 25px;
+}
+.form_box:last-of-type {
+  margin-bottom: 40px;
+}
+.form_box:last-of-type input {
+  margin-bottom: 15px;
+}

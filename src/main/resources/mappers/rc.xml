@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="rc">
+
+	<select id="rclist" resultType="java.util.Map">
+		SELECT  rcno, rno, userid, rccon, rcdate, rcrec, rcid
+        FROM r_comm
+        ORDER BY rcno
+	</select>
+	
+	<insert id="rcinsert" parameterType="java.util.Map">
+		INSERT INTO r_comm(rno, userid, rccon, rcdate)
+		VALUES(#{rno}, #{userid}, #{rccon}, current_date)
+	</insert>
+	
+	<delete id="rcdelete" parameterType="java.util.Map">
+	    DELETE FROM r_comm
+	    WHERE rcno = #{rcno}
+	</delete>
+	
+	<update id="rcrecupdate" parameterType="java.util.Map">
+	   <trim prefix="UPDATE r_comm SET">
+	       rcrec = rcrec + 1,
+	       rcid = CONCAT(COALESCE(rcid, 'x'), ',', #{rcid})
+	   </trim>
+	   WHERE rcno = #{rcno}
+	</update>
+	
+</mapper>

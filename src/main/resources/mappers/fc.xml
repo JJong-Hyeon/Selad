@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="fc">
+
+	<select id="fclist" resultType="java.util.Map">
+		SELECT  fcno, fno, userid, fcdate, fccon
+        FROM f_comm
+        ORDER BY fcno
+	</select>
+	
+	<insert id="fcinsert" parameterType="java.util.Map">
+		INSERT INTO f_comm(fno, userid, fcdate, fccon)
+		VALUES(#{fno}, #{userid}, current_date, #{fcon})
+	</insert>
+	
+	<delete id="fcdelete" parameterType="java.util.Map">
+	    DELETE FROM f_comm
+	    WHERE fcno = #{fcno}
+	</delete>
+</mapper>

@@ -1,0 +1,114 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+/* section1 */
+.section1 {
+  margin-bottom: 100px;
+}
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.section_frame h2 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+.section_frame table {
+  width: 1200px;
+  margin-bottom: 40px;
+}
+.section_frame table thead tr td {
+  vertical-align: middle;
+}
+.section_frame table tbody tr td {
+  vertical-align: middle;
+}
+.section_frame table thead {
+  border-top: 4px solid #29b648;
+  border-bottom: 2px solid #29b648;
+}
+.section_frame table thead tr {
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section_frame table tbody tr {
+  height: 50px;
+}
+.section_frame table tbody {
+  border-bottom: 1px solid #bbbbbb;
+}
+.section_frame .button_align {
+  text-align: right;
+}
+.section_frame .button_align button {
+  padding: 10px 30px;
+  background-color: #29b648;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+/* //section1 */
+
+/* pagination */
+.pagination {
+  display: block;
+  margin-bottom: 30px;
+}
+.pagination a {
+  padding: 10px 15px;
+  border: 1px solid #29b648;
+  border-radius: 5px;
+  color: #000;
+  margin: 0px 5px;
+  display: inline-block;
+}
+.pagination a:hover {
+  background-color: #29b648;
+  color: #fff;
+}
+.search_box span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.search_box > input:first-of-type {
+  height: 15px;
+  width: 250px;
+  border-radius: 3px;
+  outline: 1px solid #d7d7d7;
+  background-color: #fff;
+  border: none;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+.search_box > input:last-of-type {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: 1px solid #29b648;
+    background-color: #fff;
+}
+.search_box > input:last-of-type:hover {
+  background-color: #29b648;
+  color: #fff;
+}
+.search_box > input:focus {
+  outline: 2px solid #29b648;
+}
+/* //pagination end */

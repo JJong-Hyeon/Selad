@@ -1,0 +1,203 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.banner img {
+  width: 100%;
+  display: block;
+}
+
+/* section1  */
+.section1 img {
+  display: block;
+  margin: auto;
+}
+
+.section_frame {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.section_frame > h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: left;
+  color: #ff5c00;
+  letter-spacing: 1px;
+  margin-top: 100px;
+}
+
+.section_frame .top_box > form {
+  border: 1px solid #bbbbbb;
+  padding: 45px;
+  border-radius: 10px;
+}
+
+.section_frame .top_box table tbody tr td {
+  vertical-align: middle;
+}
+
+.section_frame .top_box table tbody tr {
+  height: 50px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(2) {
+  border-bottom: 1px solid #bbbbbb;
+}
+.section_frame .top_box table tbody tr td:first-of-type {
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+.section_frame .top_box table tbody tr:first-of-type td:first-of-type {
+  width: 80%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(5) td:last-of-type {
+  text-align: right;
+}
+.section_frame .top_box table tbody tr:nth-of-type(5) {
+  border-bottom: 1px solid #bbbbbb;
+  height: 60px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(6) {
+  border-bottom: 1px solid #bbbbbb;
+  height: 60px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(7) {
+  border-bottom: 1px solid #bbbbbb;
+  height: 60px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(6) td:last-of-type {
+  text-align: right;
+}
+.section_frame .top_box table tbody tr:nth-of-type(7) td:last-of-type {
+  text-align: right;
+}
+.section_frame .top_box table tbody tr:nth-of-type(3) td img {
+  display: block;
+  width: 850px;
+  height: 400px;
+  object-fit: contain;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.section_frame .top_box table tbody tr:nth-of-type(4) td {
+  text-align: center;
+}
+.section_frame .top_box table tbody tr:nth-of-type(4) .like_btn button {
+  background: none;
+  border: none;
+}
+.section_frame .top_box table tbody tr:nth-of-type(4) .like_btn img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn_line {
+  display: flex;
+  justify-content: space-between;
+}
+.btn_line input:nth-of-type(2) {
+  padding: 10px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 14px;
+  margin-top: 50px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.btn_line input:last-of-type {
+  padding: 10px 30px;
+  background-color: #29b648;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 50px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+#rcinsertfrm {
+  padding: 40px;
+  margin-bottom: 25px;
+  border: 1px solid #bbbbbb;
+  border-radius: 10px;
+  text-align: left;
+}
+#rcinsertfrm h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#rcinsertfrm input {
+  width: 95%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #bbbbbb;
+  padding: 0px 15px;
+}
+#rcinsertfrm button {
+  padding: 10px 30px;
+  background-color: #29b648;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#rcommfrm {
+  text-align: left;
+}
+#rcommfrm .mentbox {
+  border-bottom: 1px solid #bbbbbb;
+  margin-bottom: 20px;
+}
+#rcommfrm p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#rcommfrm h3 {
+  margin-bottom: 15px;
+}
+#rcommfrm h4 {
+  margin-bottom: 15px;
+}
+#rcommfrm .flex_box {
+  display: flex;
+  justify-content: space-between;
+}
+#rcommfrm .flex_box > .flex_btn {
+  display: flex;
+  align-items:center;
+}
+#rcommfrm .flex_box > .flex_btn span h5 {
+	margin-left:10px;
+	font-size:18px;
+}
+#rcommfrm .flex_box > .flex_btn button {
+  border: none;
+  background: none;
+}
+#rcommfrm .flex_box > .flex_btn button img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+/* //section1 end */

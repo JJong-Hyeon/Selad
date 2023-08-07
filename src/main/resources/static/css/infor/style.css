@@ -1,0 +1,86 @@
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif !important;
+}
+
+/* banner */
+.banner img {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+/* banner end */
+
+/* section1 */
+.section1 {
+  margin-top: 150px;
+}
+
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+}
+.section_frame > h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #29B648;
+  margin-bottom: 60px;
+}
+
+.section_frame .imgbox > img{
+  display: block;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.section_frame .imgbox:last-of-type > img{
+  display: block;
+  width: 100%;
+  margin-bottom: 150px;
+}
+.section_frame .imgbox > h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.section_frame .imgbox .textbox {
+  margin-bottom: 100px;
+}
+.section_frame .imgbox .textbox  > h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.section_frame .imgbox .textbox p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+.section_frame .imgbox2 .img_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.section_frame .imgbox2 .img_flex img {
+  display: block;
+}
+.section_frame .imgbox2 .textbox  > h2 {
+  font-size: 24px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.section_frame .imgbox2 .textbox p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+.section_frame .imgbox2 .textbox {
+  margin-bottom: 100px;
+}
+/* //section1  end*/

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="gameng">
+    <select id="getGamengList" resultType="kr.co.selad.gameng.GamengDTO">
+        SELECT gname, gaaddr, gapno, lat, lng
+        FROM gameng
+    </select>
+    
+    <select id="searchGameng" resultType="kr.co.selad.gameng.GamengDTO" parameterType="java.lang.String">
+        SELECT gname, gaaddr, gapno, lat, lng
+        FROM gameng
+        WHERE gname LIKE '%' || #{keyword} || '%'
+    </select>
+</mapper>
+

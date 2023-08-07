@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+	<select id="reviewlist" resultType="java.util.Map">
+		SELECT  rno, ono, userid, rsub, rcon, rfile, rdate, rcnt, rstar, rrec, rid
+        FROM review
+        ORDER BY rno
+	</select>
+	
+	<select id="reviewdetail" resultType="java.util.Map" parameterType="int">
+		SELECT  rno, ono, userid, rsub, rcon, rfile, rdate, rcnt, rstar, rrec, rid
+        FROM review
+        WHERE rno = #{rno}
+	</select>
+	
+	<delete id="reviewdelete" parameterType="int">
+		DELETE FROM review
+        WHERE rno = #{rno}
+	</delete>
+	
+	<insert id="reviewinsert" parameterType="java.util.Map">
+		INSERT INTO review(ono, userid, rsub, rcon, rfile, rdate, rstar, rcombo)
+		VALUES(#{ono}, #{userid}, #{rsub}, #{rcon}, #{rfile}, current_date, #{rstar},rcombo)
+	</insert>
+	
+	<select id="reviewsearch" parameterType="String" resultType="java.util.Map">
+		SELECT  rno, ono, userid, rsub, rcon, rfile, rdate, rcnt, rstar
+        FROM review
+        WHERE rsub LIKE #{keyword}
+        ORDER BY rno
+	</select>
+	
+	<update id="rcntupdate" parameterType="int">
+		UPDATE review
+		SET rcnt=rcnt+1
+		WHERE rno=#{rno}
+	</update>
+	
+		<!-- 페이징을 적용한 게시물 리스트 조회 -->
+	<select id="reviewlistPaging" resultType="map">
+	    SELECT *
+	    FROM review
+	    ORDER BY rno DESC
+	    LIMIT #{start}, #{end}
+	</select>
+	
+	<select id="reviewcount" resultType="int">
+	    SELECT COUNT(*) FROM review;
+	</select>
+	
+	<select id="rfile" resultType="String" parameterType="int">
+        SELECT rfile
+        FROM review
+        WHERE rno=#{rno}
+    </select>
+    
+    <select id="jumunlist" resultType="java.util.Map" parameterType="String">
+    	SELECT  ono, userid, oaddr, gacode, req, tot, ps, pcode, osort, pmdate
+        FROM jumun
+        WHERE userid = #{s_id}
+    </select>
+    
+
+    <select id="jumunHistory" resultType="int">
+        SELECT COUNT(*) FROM jumun WHERE userid = #{userid}
+    </select>
+
+	<update id="rrecupdate" parameterType="java.util.Map">
+	   <trim prefix="UPDATE review SET">
+	       rrec = rrec + 1,
+	       rid = CONCAT(COALESCE(rid, 'x'), ',', #{rid})
+	   </trim>
+	   WHERE rno = #{rno}
+	</update>
+</mapper>

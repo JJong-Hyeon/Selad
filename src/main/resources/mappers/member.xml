@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="member">
+
+    <!-- 회원가입 -->
+	<insert id="insert" parameterType="kr.co.selad.member.MemberDTO">
+        INSERT INTO userlist (userid, upw, uname, ujumin1, ujumin2, ugender, uphone1, uphone2, uphone3, uemail, uzcode, ugrade, udate, uaddr1, uaddr2) 
+        VALUES 			(#{userid}, #{upw}, #{uname}, #{ujumin1}, #{ujumin2}, #{ugender}, #{uphone1}, #{uphone2}, #{uphone3} ,#{uemail}, #{uzcode}, '1', now(), #{uaddr1}, #{uaddr2} )
+    </insert>
+
+
+	<!-- 로그인 -->
+	<select id="login" resultType="kr.co.selad.member.MemberDTO" parameterType="kr.co.selad.member.MemberDTO">
+		SELECT *
+		FROM userlist 
+		where userid=#{userid} and upw=#{upw} 
+	</select>
+	
+	
+	<!-- 아이디 찾기 -->
+	<select id="findID" resultType="kr.co.selad.member.MemberDTO" parameterType="String">
+	    SELECT userid
+	    FROM userlist
+	    WHERE uname = #{uname} AND ujumin1 = #{ujumin1} AND ujumin2 = #{ujumin2}
+	</select>
+
+
+	<!-- 비밀번호 찾기 -->
+	<select id="findPW" resultType="kr.co.selad.member.MemberDTO" parameterType="String">
+	    SELECT upw
+	    FROM userlist
+	    WHERE userid = #{userid} AND uemail = #{uemail}
+	</select>
+	
+	
+	<!-- 아이디 중복 확인 -->
+	<select id="idcheck" resultType="int" parameterType="String">
+	    SELECT count(userid)
+	    FROM userlist
+	    WHERE userid = #{userid}
+	</select>
+	
+	
+	<!-- 회원정보수정 -->
+	<update id="update" parameterType="kr.co.selad.member.MemberDTO">
+	    UPDATE userlist
+	    SET upw=#{upw}, uemail=#{uemail}, uname=#{uname}, uphone1=#{uphone1}, uphone2=#{uphone2}, uphone3=#{uphone3}
+	        , ujumin1=#{ujumin1}, ujumin2=#{ujumin2}, ugender=#{ugender}, uzcode=#{uzcode}, uaddr1=#{uaddr1}, uaddr2=#{uaddr2}
+	    WHERE userid=#{userid}    
+	</update>
+	
+	
+	<!-- 회원탈퇴 -->
+	 <delete id="delete" parameterType="String">
+        DELETE FROM userlist
+        WHERE userid = #{userid}
+    </delete>
+    
+
+
+</mapper>     
+
+

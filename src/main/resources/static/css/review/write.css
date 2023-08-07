@@ -1,0 +1,172 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.banner p {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 500;
+  top: 25%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000000;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  top: 55%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000000;
+}
+/* //banner end */
+
+/* section1  */
+.section1 img {
+  display: block;
+  margin: auto;
+}
+
+.section_frame {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.section_frame > h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.section_frame table {
+  width: 1000px;
+}
+.section_frame table thead {
+  border-top: 3px solid #29b648;
+  border-bottom: 1px solid #29b648;
+}
+.section_frame table thead tr {
+  height: 60px;
+  border-bottom: 1px solid #29b648;
+}
+.section_frame table thead tr td {
+  vertical-align: middle;
+  text-align: left;
+}
+.section_frame table thead tr td:first-of-type {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 25px;
+  width: 15%;
+}
+
+.section_frame table thead tr td input[type="file"]::file-selector-button {
+  padding: 60px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+input[type="file"]::file-selector-button:hover {
+  background-color: #29b648;
+  color: #fff;
+}
+.section_frame table thead tr:nth-of-type(3) td > input {
+  border: none;
+  padding: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 70%;
+  margin-top: 15px;
+}
+.section_frame table thead tr:nth-of-type(3) td > input:focus {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 400;
+}
+.section_frame table thead tr:nth-of-type(7) td > input {
+  border: none;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+.section_frame table thead tr:nth-of-type(7) td > input:focus {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 600;
+}
+.section_frame table thead tr td select {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0px;
+}
+.section_frame table thead tr td textarea {
+  border: none;
+  padding: 20px;
+  outline: none;
+  margin-bottom: 15px;
+}
+/* //section1 end */
+
+.section_frame table thead tr:last-of-type td > input {
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  
+}
+.section_frame table thead tr:last-of-type td > input:focus {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 400;
+}
+
+.btn_line {
+  text-align: right;
+  margin-top: 50px;
+}
+.btn_line > input {
+  padding: 10px 30px;
+  background-color: #ff5c00;
+
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+.btn_line > button {
+  padding: 10px 30px;
+  background-color: #29b648;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}

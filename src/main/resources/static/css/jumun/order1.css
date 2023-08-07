@@ -1,0 +1,450 @@
+@import url(reset.css);
+@import url(header.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(footer.css);
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* banner */
+.banner {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.banner img {
+  width: 100%;
+}
+.banner p {
+  position: absolute;
+  font-size: 36px;
+  font-weight: 500;
+  top: 30%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000;
+}
+.banner h2 {
+  position: absolute;
+  font-size: 42px;
+  font-weight: 600;
+  top: 50%;
+  left: 25%;
+  letter-spacing: 4px;
+  color: #000;
+}
+/* //banner end */
+
+/* section1 */
+.section1 {
+  width: 100%;
+  margin-top: 70px;
+}
+.section_frame {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.section_frame .next_btn {
+  padding: 10px 30px;
+  background-color: #ff5c00;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 150px;
+	cursor: pointer;
+}
+.section_frame > h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  margin-top: 10%;
+  font-weight: bold;
+  color: #29b648;
+}
+.section_frame > p {
+  margin-bottom: 70px;
+  font-size: 22px;
+}
+.order_box {
+  width: 1000px;
+  margin: 70px auto 0px;
+  border: 2px solid #29b648;
+  border-radius: 10px;
+}
+.order_box .green_bar {
+  width: 100%;
+  height: 30px;
+  background: #29b648;
+  border-radius: 5px 5px 0px 0px;
+}
+.text-left {
+  width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+.section_frame .text-left > img {
+  width: 400px;
+  margin-bottom: 25px;
+}
+.section_frame .text-left > h3:first-of-type {
+  margin-left: 14px;
+}
+.section_frame .text-left > h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 7px;
+}
+.section_frame > h3:first-of-type {
+  margin-bottom: 15px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* //section1 end */
+
+/* header:hover {
+        background: #fff;
+    } */
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+.logo {
+  width: 20%;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 3%;
+  /* background: #777; */
+}
+.logo h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.nav {
+  width: 70%;
+  /* background: #666; */
+  margin: 0 8%;
+  line-height: 3;
+}
+.nav li {
+  padding: 0 10px 0 10px;
+  width: 25%;
+}
+.nav a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+.login {
+  width: 15%;
+  /* background: #555; */
+  text-align: right;
+  padding-right: 9%;
+  line-height: 3;
+}
+.login img {
+  margin-right: 10px;
+}
+.login a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+}
+
+.menu_list li a:hover {
+  color: #29b648;
+}
+
+.submenu {
+  display: none;
+}
+.submenu li {
+  padding: 0;
+  width: 100%;
+}
+/* section1 */
+.section1 {
+  width: 100%;
+}
+.section_txt1 {
+  margin-top: 80px;
+}
+.section_txt2 {
+  margin-top: 30px;
+}
+.section_txt3 {
+  margin-top: 40px;
+}
+.section_txt4 {
+  margin-top: 0;
+}
+
+.section_txt1 p {
+  color: #29b648;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.section_txt2 p {
+  text-align: center;
+  font-size: 15px;
+}
+.section_txt3 p {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  padding-right: 32%;
+}
+.section_txt3 img {
+  height: 40%;
+  width: 40%;
+  padding-top: 20px;
+}
+
+.store p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.division-line {
+  border-top: 1px solid #d7caca;
+  margin: 30px auto;
+  width: 300px;
+}
+.list-box p {
+  font-weight: 20px;
+}
+
+.option h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.option input {
+  width: 70%;
+  height: 30px;
+  border: none;
+  outline: 1px solid #aeaeae;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+.map_wrap a,
+.map_wrap a:hover,
+.map_wrap a:active {
+  color: #000;
+  text-decoration: none;
+}
+.map_wrap {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+#menu_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  overflow-y: auto;
+  background: rgb(252, 252, 252);
+  z-index: 1;
+  font-size: 12px;
+  height: 100%;
+  border-radius: 0px 0px 8px 8px;
+  border: none;
+}
+
+#menu_wrap .option {
+  text-align: center;
+}
+#menu_wrap .option p {
+  margin: 10px 0;
+}
+#menu_wrap .option button {
+  margin-left: 5px;
+}
+#placesList li {
+  list-style: none;
+  margin-top: 15px;
+  border-top: 1px solid #aeaeae;
+}
+.por {
+  position: relative;
+}
+.por button {
+  position: absolute;
+  top: 6px;
+  right: 40px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+.por button img {
+  width: 26px;
+  right: 36px;
+}
+#placesList {
+  width: 80% !important;
+  margin: 0 auto;
+}
+#placesList .item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  min-height: 65px;
+  text-align: left;
+}
+#placesList .item span:first-of-type {
+  display: none;
+}
+#placesList .item span {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 15px;
+} 
+#placesList .item span:last-of-type {
+  margin-bottom: 0px;
+}
+#placesList .item h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+#placesList .info {
+text-align: left !important;
+}
+#placesList .info h5 {
+	font-size: 16px;
+	font-weight:600;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#placesList .info span:first-of-type {
+	margin-bottom:15px;
+	color:#bbbbbb;
+	display:block;
+}
+#placesList .info span:last-of-type {
+
+	color:#29b648;
+	display:block;
+}
+#placesList .item h5,
+#placesList .item .info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 15px;
+}
+#placesList .item .info {
+  padding: 10px 0px 0px 0px;
+}
+#placesList .info .gray {
+  color: #8a8a8a;
+}
+
+#placesList .info .tel {
+  color: #29b648;
+}
+#placesList .item .markerbg {
+  float: left;
+  position: absolute;
+  width: 36px;
+  height: 37px;
+  margin: 10px 0 0 10px;
+  background: url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png)
+    no-repeat;
+}
+#placesList .item .marker_1 {
+  background-position: 0 -10px;
+}
+#placesList .item .marker_2 {
+  background-position: 0 -56px;
+}
+#placesList .item .marker_3 {
+  background-position: 0 -102px;
+}
+#placesList .item .marker_4 {
+  background-position: 0 -148px;
+}
+#placesList .item .marker_5 {
+  background-position: 0 -194px;
+}
+#placesList .item .marker_6 {
+  background-position: 0 -240px;
+}
+#placesList .item .marker_7 {
+  background-position: 0 -286px;
+}
+#placesList .item .marker_8 {
+  background-position: 0 -332px;
+}
+#placesList .item .marker_9 {
+  background-position: 0 -378px;
+}
+#placesList .item .marker_10 {
+  background-position: 0 -423px;
+}
+#placesList .item .marker_11 {
+  background-position: 0 -470px;
+}
+#placesList .item .marker_12 {
+  background-position: 0 -516px;
+}
+#placesList .item .marker_13 {
+  background-position: 0 -562px;
+}
+#placesList .item .marker_14 {
+  background-position: 0 -608px;
+}
+#placesList .item .marker_15 {
+  background-position: 0 -654px;
+}
+#pagination {
+  margin: 10px auto;
+  text-align: center;
+}
+#pagination a {
+  display: inline-block;
+  margin-right: 10px;
+}
+#pagination .on {
+  font-weight: bold;
+  cursor: default;
+  color: #777;
+}
+
+
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="coupon">
+
+    <!-- 쿠폰 생성 -->
+	<insert id="insert" parameterType="kr.co.selad.coupon.CouponDTO">
+	    <!-- coupon 테이블에 쿠폰 정보를 삽입합니다. -->
+	    insert into coupon (ccode, userid, csd, cname, cstr, cend, ccon, csta)
+	    values (#{ccode}, #{userid}, #{csd}, #{cname}, now(), now() + interval 30 day, #{ccon}, '0')
+	</insert>
+
+
+	<!-- 마이페이지 쿠폰 출력 -->	    
+    <select id="coupon" parameterType="String" resultType="kr.co.selad.coupon.CouponDTO">
+    	SELECT ccode, userid, csd, cname, cstr, cend, ccon
+    	FROM coupon
+    	WHERE userid=#{s_id}
+    </select>
+
+
+</mapper>
